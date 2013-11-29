@@ -7,7 +7,7 @@ bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
 
 # https://rvm.io
 # rvm for the rubiess
-curl -L https://get.rvm.io | bash -s stable --ruby
+#curl -L https://get.rvm.io | bash -s stable --ruby
 
 # https://github.com/isaacs/nave
 # needs npm, obviously.
@@ -17,15 +17,15 @@ npm install -g nave
 
 # homebrew!
 # you need the code CLI tools YOU FOOL.
-ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
+#ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 
 
 
 # https://github.com/rupa/z
 # z, oh how i love you
-cd ~/code
+cd ~/dev/git
 git clone https://github.com/rupa/z.git
-chmod +x ~/code/z/z.sh
+chmod +x ~/dev/git/z/z.sh
 # also consider moving over your current .z file if possible. it's painful to rebuild :)
 
 # z binary is already referenced from .bash_profile
@@ -33,12 +33,12 @@ chmod +x ~/code/z/z.sh
 
 # https://github.com/dronir/SpotifyControl
 # Spotify Controll Script
-cd ~/code
+cd ~/dev/git
 git clone git://github.com/dronir/SpotifyControl.git
 
 # https://github.com/jeroenbegyn/VLCControl
 # VLC Controll Script
-cd ~/code
+cd ~/dev/git
 git clone git://github.com/jeroenbegyn/VLCControl.git
 
 
