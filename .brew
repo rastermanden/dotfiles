@@ -27,7 +27,10 @@ brew install ack
 brew install git
 brew install rename
 brew install tree
-	
+
+# install trunk GDAL
+
+brew install gdal --HEAD	
 
 # install Brew Cask
 
