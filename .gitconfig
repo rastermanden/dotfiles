@@ -45,3 +45,6 @@
 
 [user]
         name = rastermanden
+
+[credential]
+        helper = osxkeychain
