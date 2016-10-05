@@ -181,3 +181,25 @@ function dbash {
 docker run --rm -i -t -e TERM=xterm --entrypoint /bin/bash $1
 }
 complete -F _docker_images dbash
+
+
+## from Telling
+
+dogr2ogr() {
+docker run --rm \
+--log-driver none \
+--name ogr2ogr \
+--entrypoint ogr2ogr \
+-v $(pwd):/data \
+geodata/gdal:2.1.0 \
+"$@"
+}
+dogrinfo() {
+docker run --rm \
+--log-driver none \
+--name ogrinfo \
+--entrypoint ogrinfo \
+-v $(pwd):/data \
+geodata/gdal:2.1.0 \
+"$@"
+}
