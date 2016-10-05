@@ -29,3 +29,7 @@ complete -W "NSGlobalDomain" defaults
 code () {
 	VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*
 }
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then  
+. $(brew --prefix)/etc/bash_completion
+fi 
