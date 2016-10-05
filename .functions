@@ -1,8 +1,14 @@
+# FIND IN FILKES
+#$1 PATH $2 PATTERN
+function fif() {
+grep -rnw "$1" -e "$2"
+}
+
 # Create a new directory and enter it
+
 function md() {
 	mkdir -p "$@" && cd "$@"
 }
-
 
 # find shorthand
 function f() {
@@ -154,5 +160,4 @@ gifify() {
   else
     echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
   fi
-}
-
+ }
